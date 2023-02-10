@@ -55,11 +55,10 @@ const init = async () => {
     validate: (artifacts) => ({
       isValid: true,
       credentials: {
-        id: artifacts.decoded.payload.id
+        id: artifacts.decoded.payload.id,
       },
     }),
   });
-
 
 
   await server.register([
